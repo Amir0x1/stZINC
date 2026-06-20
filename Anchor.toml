@@ -1,0 +1,19 @@
+[toolchain]
+anchor_version = "0.31.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.mainnet]
+zinc_stake_adaptor = "stZC6zrjzED3DUknVZy1ZX1HRpVVU4gJpNsz8Aey6aP"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "mainnet"
+wallet = "keys/admin-armMHMFMrCJ5arvxF24avVXab2bbDaeyu1xXBaPJuzc.json"
+
+[scripts]
+test = "echo 'tested on mainnet'"

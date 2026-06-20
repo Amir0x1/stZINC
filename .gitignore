@@ -1,3 +1,25 @@
+# --- secrets / keypairs (NEVER commit) ---
 admin*
 manager*
+keys*
+*-keypair.json
+*.env
+.env
+.env.*
+
+# --- the spec (kept private per request) ---
 stZINC.md
+
+# --- rust / anchor build artifacts ---
+target/
+.anchor/
+**/*.rs.bk
+
+# --- node ---
+app/node_modules/
+node_modules/
+app/dist/
+
+# --- misc ---
+.DS_Store
+test-ledger/

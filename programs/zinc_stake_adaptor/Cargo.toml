@@ -1,0 +1,22 @@
+[package]
+name = "zinc_stake_adaptor"
+version = "0.1.0"
+description = "Voltr adaptor that stakes a vault's ZINC into the ZINC staking pool (stZINC liquid staking)"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "zinc_stake_adaptor"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = "0.31.1"
+anchor-spl = "0.31.1"
