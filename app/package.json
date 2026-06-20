@@ -1,0 +1,35 @@
+{
+  "name": "stzinc-ops",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Operational scripts for the stZINC Voltr vault + zinc-stake adaptor",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "add-adaptor": "tsx src/scripts/add-adaptor.ts",
+    "init-strategy": "tsx src/scripts/init-strategy.ts",
+    "init-direct-withdraw": "tsx src/scripts/init-direct-withdraw.ts",
+    "set-zero-fees": "tsx src/scripts/set-zero-fees.ts",
+    "read-fees": "tsx src/scripts/read-fees.ts",
+    "harvest-fees": "tsx src/scripts/harvest-fees.ts",
+    "deposit-strategy": "tsx src/scripts/deposit-strategy.ts",
+    "withdraw-strategy": "tsx src/scripts/withdraw-strategy.ts",
+    "stake-all-idle": "tsx src/scripts/stake-all-idle.ts",
+    "keeper-refresh": "tsx src/scripts/keeper-refresh.ts",
+    "user-deposit": "tsx src/scripts/user-deposit.ts",
+    "user-direct-withdraw": "tsx src/scripts/user-direct-withdraw.ts",
+    "read-state": "tsx src/scripts/read-state.ts"
+  },
+  "dependencies": {
+    "@solana-program/compute-budget": "^0.16.0",
+    "@solana-program/system": "^0.12.2",
+    "@solana-program/token": "^0.14.0",
+    "@solana/kit": "^6.10.0",
+    "@voltr/vault-sdk": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
